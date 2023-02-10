@@ -1,6 +1,7 @@
 import keyboard
 import classNote
 import checks
+from colorama import Fore, Style
 
 
 def createNote():
@@ -22,9 +23,11 @@ def editNote():
 
 def menu():
     print("\033[H\033[J")
-    print('Добро пожаловать в программу "Заметки"\n')
-    print("\n1 - для добавления заметки\n2 - для вывода всех заметок\n3 - для удаления заметки\n4 - для редактирования заметки\n5 - для выборки по дате\n6 - показать элемент по id\n7 - для выхода\n")
-
+    print(Fore.GREEN + 'Добро пожаловать в программу "Заметки"\n')
+    print(Style.RESET_ALL) 
+    print(Fore.RED + "\n1 - для добавления заметки\n2 - для вывода всех заметок\n3 - для удаления заметки\n4 - для редактирования заметки\n5 - для выборки по дате\n6 - показать элемент по id\n7 - для выхода\n")
+    print(Style.RESET_ALL)
+    
 
 def continueWork():
     print('Нажмите пробел для продолжения...')
